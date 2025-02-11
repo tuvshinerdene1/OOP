@@ -50,6 +50,7 @@ void printArr(float arr[],int size,string name){
 int main(){
 
     //jishee 1
+    cout<<"Ascending example: "<<endl;
     float array1[] = {12,21,34,1,23,5,16};
     sort_array(array1, 7, compare_asc);
     printArr(array1, 7, "array1");
@@ -57,6 +58,7 @@ int main(){
     cout<<endl;
 
     //jishee 2
+    cout<<"Descending example: "<<endl;
     sort_array(array1, 7, compare_desc);
     printArr(array1, 7, "array1");
 
