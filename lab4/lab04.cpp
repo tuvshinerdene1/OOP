@@ -80,7 +80,7 @@ int main()
             for (int i = 0; i < v.size(); i++)
             {
                 int j = i;
-                while (j > 0 && v[j].calcSalary()<v[j-1].calcSalary())
+                while (j > 0 && v[j].calcSalary()>v[j-1].calcSalary())
                 {
                     Employee temp = v[j];
                     v[j] = v[j - 1];
@@ -88,6 +88,7 @@ int main()
                     j--;
                 }
             }
+            cout<<"Sorted!!!"<<endl;
         }
         else
         {

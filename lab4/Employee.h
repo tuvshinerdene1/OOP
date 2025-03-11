@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cstring>
+
 
 class Employee
 {
@@ -32,24 +34,24 @@ public:
     void setInfo()
     {
 
-        cout << "enter id: ";
-        cin >> id;
-        cout << "enter name: ";
-        cin >> name;
-        cout << "enter position: ";
-        cin >> position;
-        cout << "enter worked hours: ";
-        cin >> worked_hours;
-        cout << "enter hourly salary: ";
-        cin >> hourly_salary;
+        std::cout << "enter id: ";
+        std::cin >> id;
+        std::cout << "enter name: ";
+        std::cin >> name;
+        std::cout << "enter position: ";
+        std::cin >> position;
+        std::cout << "enter worked hours: ";
+        std::cin >> worked_hours;
+        std::cout << "enter hourly salary: ";
+        std::cin >> hourly_salary;
     }
     void getInfo()
     {
-        cout << "ID: " << id << endl;
-        cout << "name: " << name << endl;
-        cout << "position: " << position << endl;
-        cout << "worked hours: " << worked_hours << endl;
-        cout << "hourly salary: "<<hourly_salary<<endl;
+        std::cout << "ID: " << id << std::endl;
+        std::cout << "name: " << name << std::endl;
+        std::cout << "position: " << position << std::endl;
+        std::cout << "worked hours: " << worked_hours << std::endl;
+        std::cout << "hourly salary: "<<hourly_salary<<std::endl;
     }
 
     float calcSalary()
